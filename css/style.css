@@ -1,0 +1,250 @@
+/* Variabel Warna Mode Terang  */
+:root,
+[data-bs-theme="light"] {
+  --bg-page: #fff5f8;
+  --bg-card: #ffffff;
+  --bg-accent-soft: #ffe4ee;
+  --pink-primary: #ff6b9d;
+  --pink-hover: #f05288;
+  --pink-border: #ffd1e1;
+  --text-main: #4a353d;
+  --text-muted-custom: #856873;
+  --shadow-soft: 0 10px 25px rgba(255, 107, 157, 0.12);
+}
+
+/* Variabel Warna Mode Gelap  */
+[data-bs-theme="dark"] {
+  --bg-page: #1b1216;
+  --bg-card: #281b21;
+  --bg-accent-soft: #3a242e;
+  --pink-primary: #ff85b1;
+  --pink-hover: #ff6b9d;
+  --pink-border: #4d303d;
+  --text-main: #fcebf1;
+  --text-muted-custom: #c9a8b5;
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* Mencegah horizontal scrollbar rusak */
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.main-wrapper {
+  padding-top: 85px;
+}
+
+/* Navbar */
+.pink-navbar {
+  background-color: var(--bg-card);
+  border-bottom: 2px solid var(--pink-border);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--pink-primary) !important;
+  font-size: 1.35rem;
+}
+
+.nav-link {
+  color: var(--text-main) !important;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.45rem 1rem !important;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary) !important;
+}
+
+/* Tombol Theme Toggle */
+.btn-theme-toggle {
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary);
+  border: 1.5px solid var(--pink-border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.btn-theme-toggle:hover {
+  transform: rotate(15deg) scale(1.08);
+  background-color: var(--pink-primary);
+  color: #fff;
+}
+
+/* Bento Cards  */
+.bento-card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--pink-border);
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, background-color 0.3s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+}
+
+.hero-main {
+  background: linear-gradient(135deg, var(--bg-card) 60%, var(--bg-accent-soft) 100%);
+}
+
+.text-pink-accent {
+  color: var(--pink-primary);
+}
+
+.pink-badge {
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+/* Foto Profil */
+.photo-frame img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 4px solid var(--pink-primary);
+  padding: 4px;
+  background-color: var(--bg-card);
+}
+
+/* Tombol Pink */
+.btn-pink-primary {
+  background-color: var(--pink-primary);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-pink-primary:hover {
+  background-color: var(--pink-hover);
+  color: #fff;
+}
+
+.btn-pink-outline {
+  border: 2px solid var(--pink-primary);
+  color: var(--pink-primary);
+  border-radius: 50px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+}
+
+.btn-pink-outline:hover {
+  background-color: var(--pink-primary);
+  color: #fff;
+}
+
+.btn-pink-sm {
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.btn-pink-sm:hover {
+  background-color: var(--pink-primary);
+  color: #fff;
+}
+
+/* Skill Pills */
+.skill-pill {
+  background-color: var(--bg-accent-soft);
+  color: var(--text-main);
+  border: 1.5px solid var(--pink-border);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.skill-pill:hover {
+  background-color: var(--pink-primary);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Project Cards */
+.project-card {
+  background-color: var(--bg-page);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1.5px solid var(--pink-border) !important;
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.tech-tag {
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary);
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+/* Fun Zone Boxes */
+.fun-box {
+  background-color: var(--bg-page);
+  border: 1.5px dashed var(--pink-primary);
+  height: 100%;
+  transition: 0.2s;
+}
+
+.fun-box:hover {
+  background-color: var(--bg-accent-soft);
+}
+
+/* Footer */
+.pink-footer {
+  background-color: var(--bg-card);
+  border-top: 2px solid var(--pink-border);
+}
+
+.social-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--bg-accent-soft);
+  color: var(--pink-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.social-circle:hover {
+  background-color: var(--pink-primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Lois</title>
+  
+  <!-- Google Fonts: Quicksand & Plus Jakarta Sans  -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- CSS Kustom Kita -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER / NAVIGATION BAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top pink-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#beranda">
+          <i class="bi bi-stars"></i> lois.dev
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobi">Hobi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+            <!-- Tombol Switch Gelap / Terang -->
+            <li class="nav-item ms-lg-2">
+              <button id="themeToggle" class="btn btn-theme-toggle" title="Ganti Tema Gelap/Terang">
+                <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-wrapper">
+
+    <!-- 2. HERO SECTION  -->
+    <section id="beranda" class="py-4">
+      <div class="row g-4 align-items-stretch">
+        <!-- Kotak Utama Kiri -->
+        <div class="col-lg-8">
+          <div class="bento-card hero-main h-100 d-flex flex-column justify-content-center p-4 p-md-5">
+            <span class="badge pink-badge mb-3 align-self-start">✨ Mahasiswa Teknologi Informasi</span>
+            <h1 class="display-5 fw-bold mb-3">Halo, Aku <span class="text-pink-accent">Aloisia Dyah Ayu Hartanti</span>!</h1>
+            <p class="lead mb-4">
+              Mahasiswa Prodi Sistem Informasi </strong>. Seorang pelajar Web Developer yang antusias, selalu bersemangat mempelajari teknologi baru, dan siap membuat karya digital bermanfaat.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#proyek" class="btn btn-pink-primary">Lihat Karyaku <i class="bi bi-arrow-down-right"></i></a>
+              <a href="#kontak" class="btn btn-pink-outline">Sapa Aku</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kotak Foto Kanan -->
+        <div class="col-lg-4">
+          <div class="bento-card hero-photo h-100 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+            <div class="photo-frame mb-3">
+              <img src="assets/img/profil.jpg" alt="Foto Profil" class="img-fluid rounded-4">
+            </div>
+            <h5 class="fw-bold mb-1">lois</h5>
+            <p class="small text-muted mb-0">📍 Kabupaten Semarang 📝 Angkatan 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TENTANG DIRI  -->
+    <section id="tentang" class="py-4">
+      <div class="row g-4">
+        <!-- Biografi Diri -->
+        <div class="col-lg-6">
+          <div class="bento-card h-100 p-4">
+            <h3 class="section-title mb-3"><i class="bi bi-person-heart"></i> Tentang Diriku</h3>
+            <p>
+              Saat ini saya sedang menempuh pendidikan sarjana di program studi Sistem Informasi. Ketertarikan saya pada dunia digital dimulai dari rasa penasaran bagaimana sebuah website dan aplikasi dirancang agar nyaman dilihat sekaligus mudah digunakan.
+            </p>
+            <p class="mb-0">
+              Melalui perkuliahan ini, saya terus mengasah kemampuan logika pemrograman, pengolahan data, serta perancangan modern.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills Showcase -->
+        <div class="col-lg-6">
+          <div class="bento-card h-100 p-4">
+            <h3 class="section-title mb-3"><i class="bi bi-magic"></i> Tools</h3>
+            <p class="small text-muted mb-3">Teknologi dan perangkat lunak yang saya pelajari & gunakan:</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="skill-pill"><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span class="skill-pill"><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span class="skill-pill"><i class="bi bi-bootstrap"></i> Bootstrap 5</span>
+              <span class="skill-pill"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="skill-pill"><i class="bi bi-filetype-py"></i> Python</span>
+              <span class="skill-pill"><i class="bi bi-vector-pen"></i> Figma UI/UX</span>
+              <span class="skill-pill"><i class="bi bi-git"></i> Git & GitHub</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. GALERI PROYEK & KARYA PRIBADI (Bootstrap .card, .row, .col-*) -->
+    <section id="proyek" class="py-4">
+      <div class="bento-card p-4 p-md-5">
+        <div class="text-center mb-4">
+          <span class="badge pink-badge mb-2">Karyaku</span>
+          <h2 class="section-title">Galeri Proyek & Karya</h2>
+          <p class="text-muted">Kumpulan tugas praktikum, desain UI/UX, dan karya akademis yang telah saya kerjakan.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Proyek 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0">
+              <img src="assets/img/proyek1.png" class="card-img-top" alt="Proyek 1">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge tech-tag">Figma</span>
+                  <span class="badge tech-tag">UI/UX</span>
+                </div>
+                <h5 class="card-title fw-bold">Desain Prototipe Aplikasi</h5>
+                <p class="card-text small flex-grow-1">
+                  Desain Media Promosi Produk.
+                </p>
+                <a href="#" class="btn btn-pink-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal1">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyek 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0">
+              <img src="assets/img/proyek2.png" class="card-img-top" alt="Proyek 2">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge tech-tag">Python</span>
+                  <span class="badge tech-tag">Google Colab</span>
+                </div>
+                <h5 class="card-title fw-bold">Analisis Sentimen Komentar </h5>
+                <p class="card-text small flex-grow-1">
+                  Program pengolahan data teks untuk mengklasifikasikan opini publik dari dataset komentar media sosial ke dalam format CSV.
+                </p>
+                <a href="#" class="btn btn-pink-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal2">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyek 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0">
+              <img src="assets/img/proyek3.png" class="card-img-top" alt="Proyek 3">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge tech-tag">HTML/CSS</span>
+                  <span class="badge tech-tag">Web App</span>
+                </div>
+                <h5 class="card-title fw-bold">Web Pencatatan Inventaris  </h5>
+                <p class="card-text small flex-grow-1">
+                  Aplikasi web sederhana untuk membantu pencatatan stok barang masuk, keluar, dan rekap kas harian secara rapi.
+                </p>
+                <a href="#" class="btn btn-pink-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal3">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CREATIVE CHALLENGE SECTION -->
+    <section id="hobi" class="py-4">
+      <div class="bento-card p-4">
+        <h3 class="section-title mb-3"><i class="bi bi-sparkles"></i> Sudut Kesukaanku</h3>
+        <p class="small text-muted mb-4">Hal-hal kecil yang memberiku inspirasi saat sedang istirahat dari tugas kuliah:</p>
+        
+        <div class="row g-3 text-center">
+          <div class="col-6 col-md-3">
+            <div class="fun-box p-3 rounded-4">
+              <div class="fs-2 mb-1">🎮</div>
+              <h6 class="fw-bold mb-1">Game Online</h6>
+              <p class="small mb-0 text-muted">Saya suka memainkan beberapa game. (mobile legends, roblox, dan juga berinteraksi bersama teman menggunakan discord).</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fun-box p-3 rounded-4">
+              <div class="fs-2 mb-1">🎬</div>
+              <h6 class="fw-bold mb-1">Drama Korea</h6>
+              <p class="small mb-0 text-muted">Saya menonton drakor untuk mengisi waktu luang. ("Doctor-X", "Dear-X", "Taxi Driver", "Business Proposal", dan masih banyak lagi).</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fun-box p-3 rounded-4">
+              <div class="fs-2 mb-1">🐈</div>
+              <h6 class="fw-bold mb-1">Pecinta Kucing</h6>
+              <p class="small mb-0 text-muted">Saya selalu senang melihat tingkah lucu anak bulu.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fun-box p-3 rounded-4">
+              <div class="fs-2 mb-1">🌍</div>
+              <h6 class="fw-bold mb-1">Alam</h6>
+              <p class="small mb-0 text-muted">Saya suka alam. Saya sudah menjelajah gunung sindoro, prau, ungaran, dan curug lawe benowo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. BAGIAN PENUTUP & FOOTER  -->
+  <footer id="kontak" class="pink-footer mt-4 py-4">
+    <div class="container text-center">
+      <h5 class="fw-bold mb-2">Mari Tetap Terhubung! 💌</h5>
+      <p class="small mb-3">Terima kasih sudah berkunjung ke portofolio sederhanaku.</p>
+      
+      <!-- Tautan Media Sosial -->
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="https://github.com/yues43095-svg/" target="_blank" class="social-circle" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/loisiayu_?utm_source=qr&fqnt=dzNmcHd3ZHUzNWpo" target="_blank" class="social-circle" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:yues43095@gmail.com" class="social-circle" title="Email"><i class="bi bi-envelope-heart"></i></a>
+      </div>
+
+      <hr class="w-50 mx-auto opacity-25">
+      <p class="small mb-0">
+        &copy; <span id="currentYear"></span> <strong>Aloisia Dyah Ayu Hartanti</strong> — Program Studi Sistem Informasi, Fakultas Teknologi Informasi.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal Pop-up Detail Proyek (Biar tombol Lihat Detail berfungsi lucu!) -->
+  <div class="modal fade" id="detailModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Detail Proyek 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Proyek ini dikerjakan menggunakan <strong>Figma</strong> dengan menerapkan prinsip hierarki visual, komponen interaktif, dan transisi animasi halus antar halaman.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="detailModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Detail Proyek 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Proyek kelompok mata kuliah Dasar Pemrograman menggunakan <strong>Python</strong> di Google Colab untuk mengambil data komentar dan menganalisis sentimen positif/negatif.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="detailModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Detail Proyek 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aplikasi berbasis web ringan untuk membantu pencatatan barang dagangan serta laporan arus kas harian agar lebih terstruktur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Kustom Kita -->
+  <script src="script.js/script.js"></script>
+</body>
+</html>
